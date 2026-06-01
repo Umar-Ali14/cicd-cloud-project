@@ -27,6 +27,7 @@ jobs:
         run: ls -R
 
       - name: Sync to S3 (FIXED)
-        run: aws s3 sync . s3://cicd-cloud-project-bucket --delete \
-            --exclude ".git/*" \
-            --exclude ".github/*"
+        run: |
+          aws s3 sync . s3://cicd-cloud-project-bucket --delete \
+          --exclude ".git/*" \
+          --exclude ".github/*"
