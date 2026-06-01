@@ -28,21 +28,22 @@ Deployed a static website using Amazon S3
 This setup enables secure and automated deployment instead of manual uploads.
 
 🔄 Workflow
-
 Code → Git & Git Bash → GitHub → AWS IAM OIDC → Amazon S3 → Live Website
 
 🛠️ Services / Tools Used
+
 Git & Git Bash – Version control and local repository management
 GitHub – Source code hosting and CI/CD workflow integration
 AWS IAM (OIDC) – Secure authentication using identity provider (no long-term access keys)
 Amazon S3 – Static website hosting and deployment
+
 📊 Key Features
 Secure CI/CD pipeline setup
 Identity-based AWS authentication (OIDC)
 Automated deployment to S3
 Real-world DevOps workflow implementation
-🌐 Result
 
+🌐 Result
 A fully functional static website deployed on AWS S3 with a secure and structured CI/CD pipeline.
 
 🚀 Future Improvements
@@ -50,6 +51,6 @@ Add AWS CodePipeline or GitHub Actions for full automation
 Integrate CloudFront for global content delivery
 Add CloudWatch monitoring and logging
 Create full architecture diagram for visualization
-💡 Learning Outcome
 
+💡 Learning Outcome
 This project helped me understand real-world CI/CD pipelines, secure AWS authentication, and cloud-based deployment workflows.
