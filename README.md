@@ -9,10 +9,10 @@ Here you can find all project-related media, workflow explanation, and deploymen
 
 Manual deployment of websites is:
 
-Time-consuming
-Error-prone
-Not scalable
-Insecure due to use of long-term AWS credentials
+Time-consuming, 
+Error-prone, 
+Not scalable, 
+Insecure ,  due to use of long-term AWS credentials
 
 There was a need for a secure and automated deployment process using modern CI/CD practices.
 
