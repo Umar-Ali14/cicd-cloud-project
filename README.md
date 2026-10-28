@@ -24,11 +24,12 @@ Used Git & Git Bash for local version control
 Managed source code on GitHub
 Implemented AWS IAM OIDC for secure authentication (no hardcoded credentials)
 Deployed a static website using Amazon S3
-
+Used GitHub Actions to run the deployment automatically on every push to main
 This setup enables secure and automated deployment instead of manual uploads.
 
 🔄 Workflow
-Code → Git & Git Bash → GitHub → AWS IAM OIDC → Amazon S3 → Live Website
+
+Code → Git → GitHub → GitHub Actions → AWS IAM OIDC → Amazon S3 → Live Website
 
 🛠️ Services / Tools Used
 
@@ -47,10 +48,11 @@ Real-world DevOps workflow implementation
 A fully functional static website deployed on AWS S3 with a secure and structured CI/CD pipeline.
 
 🚀 Future Improvements
-Add AWS CodePipeline or GitHub Actions for full automation
-Integrate CloudFront for global content delivery
-Add CloudWatch monitoring and logging
-Create full architecture diagram for visualization
+
+Put CloudFront in front of the S3 bucket for HTTPS and global caching
+Make the bucket private and serve it through CloudFront Origin Access Control (OAC)
+Add CloudWatch monitoring and alerts for the deployment
+Add an architecture diagram to this README
 
 💡 Learning Outcome
 This project helped me understand real-world CI/CD pipelines, secure AWS authentication, and cloud-based deployment workflows.
